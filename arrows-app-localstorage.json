@@ -57,99 +57,126 @@
             {
                 "id": "n0",
                 "position": {
-                    "x": -258,
-                    "y": -113
+                    "x": -503.8718661100441,
+                    "y": -239.24225903497413
                 },
-                "caption": "S1",
-                "style": {},
-                "labels": [],
-                "properties": {}
+                "caption": "",
+                "labels": [
+                    "Supplier"
+                ],
+                "properties": {
+                    "supplierId": " S1"
+                },
+                "style": {}
             },
             {
                 "id": "n1",
                 "position": {
-                    "x": 271.9343324715808,
-                    "y": -151.3879211091182
+                    "x": 294.31855067344935,
+                    "y": -326.94785903842615
                 },
-                "caption": "Orgin1",
-                "style": {},
-                "labels": [],
-                "properties": {}
+                "caption": "",
+                "labels": [
+                    "Origin"
+                ],
+                "properties": {
+                    "origin": "Origin1"
+                },
+                "style": {}
             },
             {
                 "id": "n2",
                 "position": {
-                    "x": -258,
-                    "y": 224.5488025151721
+                    "x": -372.6961502910613,
+                    "y": 120.14452785067886
                 },
-                "caption": "S2",
-                "labels": [],
-                "properties": {},
+                "caption": "",
+                "labels": [
+                    "Supplier"
+                ],
+                "properties": {
+                    " supplierId": "S2"
+                },
                 "style": {}
             },
             {
                 "id": "n3",
                 "position": {
-                    "x": 257.2724585730648,
-                    "y": 16.6083433087897
+                    "x": 285.17873753183443,
+                    "y": -90.24776715906702
                 },
-                "caption": "Origin2",
-                "style": {},
-                "labels": [],
-                "properties": {}
+                "caption": "",
+                "labels": [
+                    "Origin"
+                ],
+                "properties": {
+                    "origin": "Origin2"
+                },
+                "style": {}
             }
         ],
         "relationships": [
             {
                 "id": "n0",
-                "type": "",
+                "type": "Order",
                 "style": {
-                    "margin-start": 2,
+                    "type-padding": 0,
+                    "type-color": "#f44e3b",
+                    "property-font-size": 12,
                     "margin-peer": 50
                 },
                 "properties": {
-                    "Order": "O1",
-                    "Date": "date1"
+                    "orderId": "O1",
+                    "date": "date1"
                 },
                 "fromId": "n0",
                 "toId": "n1"
             },
             {
                 "id": "n2",
-                "type": "",
-                "style": {},
+                "type": "Order",
+                "style": {
+                    "property-font-size": 12,
+                    "type-color": "#f44e3b"
+                },
                 "properties": {
-                    "Order": "O3",
-                    "Date": "date3"
+                    "orderId": "O3",
+                    "date": "date3"
                 },
                 "fromId": "n0",
                 "toId": "n3"
             },
             {
                 "id": "n3",
-                "type": "",
-                "style": {},
+                "type": "Order",
+                "style": {
+                    "type-padding": 0,
+                    "type-font-size": 16,
+                    "type-color": "#f44e3b",
+                    "property-font-size": 12
+                },
                 "properties": {
-                    "Order": "O2",
-                    "Date": "date2"
+                    "orderId": "O2",
+                    "date": "date2"
                 },
                 "fromId": "n0",
                 "toId": "n1"
             },
             {
                 "id": "n4",
-                "type": "",
+                "type": "Order",
                 "style": {
-                    "property-position": "outside"
+                    "type-color": "#f44e3b",
+                    "property-font-size": 12
                 },
                 "properties": {
-                    "Order": "O4",
-                    "Date": "date4"
+                    "orderId": "O4",
+                    "date": "date4"
                 },
                 "fromId": "n2",
                 "toId": "n1"
             }
         ]
     },
-    "diagramName": "Untitled graph"
+    "diagramName": "SupplyChain"
 }
