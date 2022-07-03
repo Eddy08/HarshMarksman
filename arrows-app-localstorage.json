@@ -1,0 +1,155 @@
+{
+    "graph": {
+        "style": {
+            "font-family": "sans-serif",
+            "background-color": "#ffffff",
+            "background-image": "",
+            "background-size": "100%",
+            "node-color": "#ffffff",
+            "border-width": 4,
+            "border-color": "#000000",
+            "radius": 50,
+            "node-padding": 5,
+            "node-margin": 2,
+            "outside-position": "auto",
+            "node-icon-image": "",
+            "node-background-image": "",
+            "icon-position": "inside",
+            "icon-size": 64,
+            "caption-position": "inside",
+            "caption-max-width": 200,
+            "caption-color": "#000000",
+            "caption-font-size": 50,
+            "caption-font-weight": "normal",
+            "label-position": "inside",
+            "label-display": "pill",
+            "label-color": "#000000",
+            "label-background-color": "#ffffff",
+            "label-border-color": "#000000",
+            "label-border-width": 4,
+            "label-font-size": 40,
+            "label-padding": 5,
+            "label-margin": 4,
+            "directionality": "directed",
+            "detail-position": "inline",
+            "detail-orientation": "parallel",
+            "arrow-width": 5,
+            "arrow-color": "#000000",
+            "margin-start": 5,
+            "margin-end": 5,
+            "margin-peer": 20,
+            "attachment-start": "normal",
+            "attachment-end": "normal",
+            "relationship-icon-image": "",
+            "type-color": "#000000",
+            "type-background-color": "#ffffff",
+            "type-border-color": "#000000",
+            "type-border-width": 0,
+            "type-font-size": 16,
+            "type-padding": 5,
+            "property-position": "outside",
+            "property-alignment": "colon",
+            "property-color": "#000000",
+            "property-font-size": 16,
+            "property-font-weight": "normal"
+        },
+        "nodes": [
+            {
+                "id": "n0",
+                "position": {
+                    "x": -258,
+                    "y": -113
+                },
+                "caption": "S1",
+                "style": {},
+                "labels": [],
+                "properties": {}
+            },
+            {
+                "id": "n1",
+                "position": {
+                    "x": 271.9343324715808,
+                    "y": -151.3879211091182
+                },
+                "caption": "Orgin1",
+                "style": {},
+                "labels": [],
+                "properties": {}
+            },
+            {
+                "id": "n2",
+                "position": {
+                    "x": -258,
+                    "y": 224.5488025151721
+                },
+                "caption": "S2",
+                "labels": [],
+                "properties": {},
+                "style": {}
+            },
+            {
+                "id": "n3",
+                "position": {
+                    "x": 257.2724585730648,
+                    "y": 16.6083433087897
+                },
+                "caption": "Origin2",
+                "style": {},
+                "labels": [],
+                "properties": {}
+            }
+        ],
+        "relationships": [
+            {
+                "id": "n0",
+                "type": "",
+                "style": {
+                    "margin-start": 2,
+                    "margin-peer": 50
+                },
+                "properties": {
+                    "Order": "O1",
+                    "Date": "date1"
+                },
+                "fromId": "n0",
+                "toId": "n1"
+            },
+            {
+                "id": "n2",
+                "type": "",
+                "style": {},
+                "properties": {
+                    "Order": "O3",
+                    "Date": "date3"
+                },
+                "fromId": "n0",
+                "toId": "n3"
+            },
+            {
+                "id": "n3",
+                "type": "",
+                "style": {},
+                "properties": {
+                    "Order": "O2",
+                    "Date": "date2"
+                },
+                "fromId": "n0",
+                "toId": "n1"
+            },
+            {
+                "id": "n4",
+                "type": "",
+                "style": {
+                    "property-position": "outside"
+                },
+                "properties": {
+                    "Order": "O4",
+                    "Date": "date4"
+                },
+                "fromId": "n2",
+                "toId": "n1"
+            }
+        ]
+    },
+    "diagramName": "Untitled graph"
+}
