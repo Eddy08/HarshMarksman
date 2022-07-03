@@ -1,0 +1,13 @@
+LOAD CSV WITH HEADERS FROM 'file:///GraphData.csv' AS row
+
+MERGE (suppliers:Supplier {supplierId: row.Supplier})
+MERGE (origin:Origin {origin: row.Origin})
+return * ;
+
+LOAD CSV WITH HEADERS FROM 'file:///GraphData.csv' AS row
+MATCH
+  (s:Supplier),
+  (o:Origin)
+WHERE s.supplierId = row.Supplier AND o.origin = row.Origin
+MERGE (s)-[Order:Order {orderId: row.Order , date:row.Date}]->(o)
+RETURN *;
